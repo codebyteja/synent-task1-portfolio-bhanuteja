@@ -1537,3 +1537,290 @@ margin-top: 100px;
   .contact-grid { grid-template-columns: 1fr; }
   .contact-value { font-size: 0.7rem; }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================
+   MOBILE RESPONSIVE — paste at bottom of style.css
+   ============================================ */
+
+@media (max-width: 768px) {
+
+  /* ---- HEADER ---- */
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 12px;
+  }
+
+  .header h2 {
+    padding: 10px;
+    font-size: 1.4rem;
+  }
+
+  .nav {
+    position: static;
+    transform: none;
+    display: block;
+    width: 100%;
+  }
+
+  .nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+    padding: 6px 10px;
+  }
+
+  .nav-links a {
+    padding: 6px 12px;
+    font-size: 0.78rem;
+  }
+
+  /* ---- HERO ---- */
+  .hero {
+    padding: 10px 16px;
+  }
+
+  .hero .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    gap: 20px;
+  }
+
+  .hero img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .matter {
+    width: 100%;
+    margin-left: 0;
+    font-size: 1rem;
+    padding: 16px;
+  }
+
+  .matter .name {
+    font-size: 1.2rem;
+  }
+
+  .matter h2.title {
+    font-size: 1.6rem;
+  }
+
+  .span {
+    font-size: 0.9rem;
+  }
+
+  .social {
+    justify-content: center;
+    gap: 16px;
+    margin-top: 12px;
+  }
+
+  /* ---- ABOUT ---- */
+  .about {
+    flex-direction: column;
+    padding: 60px 20px;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .about-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-img-wrap {
+    width: 220px;
+    height: 260px;
+  }
+
+  .about-img-badge {
+    font-size: 0.62rem;
+    padding: 6px 14px;
+  }
+
+  .about-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-heading {
+    font-size: 1.8rem;
+  }
+
+  .about-roles {
+    justify-content: center;
+  }
+
+  .about-desc {
+    text-align: left;
+    font-size: 0.85rem;
+  }
+
+  .about-btns {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn-primary,
+  .btn-ghost {
+    width: 75%;
+    text-align: center;
+    padding: 12px 20px;
+  }
+
+  /* ---- PROJECTS ---- */
+  .projects {
+    padding: 60px 16px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+    max-width: 100%;
+    gap: 16px;
+  }
+
+  .flip-card {
+    height: 320px !important;
+  }
+
+  .back-desc {
+    font-size: 0.7rem;
+    line-height: 1.6;
+  }
+
+  /* ---- SKILLS ---- */
+  .skills {
+    padding: 60px 16px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    max-width: 100%;
+    gap: 10px;
+  }
+
+  .skill-card {
+    padding: 16px 8px;
+    gap: 8px;
+  }
+
+  .skill-card img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .skill-card span {
+    font-size: 0.62rem;
+  }
+
+  .toggle-btn {
+    padding: 8px 22px;
+    font-size: 0.78rem;
+  }
+
+  /* ---- CONTACT ---- */
+  .contact {
+    padding: 60px 16px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px;
+  }
+
+  .contact-card {
+    padding: 14px 16px;
+    gap: 12px;
+  }
+
+  .contact-value {
+    font-size: 0.7rem;
+    white-space: normal;
+    word-break: break-all;
+  }
+
+  .contact-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-sub {
+    font-size: 0.8rem;
+  }
+
+  /* ---- FOOTER ---- */
+  .footer {
+    font-size: 0.68rem;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+}
+
+/* ---- Very small phones (iPhone SE etc) ---- */
+@media (max-width: 380px) {
+
+  .hero img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .about-img-wrap {
+    width: 180px;
+    height: 220px;
+  }
+
+  .about-heading {
+    font-size: 1.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .flip-card {
+    height: 280px !important;
+  }
+
+  .nav-links a {
+    font-size: 0.7rem;
+    padding: 5px 10px;
+  }
+
+}
+
